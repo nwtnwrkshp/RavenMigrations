@@ -1,9 +1,9 @@
 ﻿namespace Raven.Migrations
 {
-    public interface IMigrationRecordStore
-    {
-        IMigrationRecord Load(string migrationId);
-        void Store(string migrationId);
-        void Delete(IMigrationRecord record);
-    }
+  public interface IMigrationRecordStore
+  {
+    IMigrationRecord Load(string migrationId);
+    void Store(MigrationRecord record);
+    void Delete(IMigrationRecord record);
+  }
 }
